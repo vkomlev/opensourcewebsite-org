@@ -154,6 +154,7 @@ $config = [
                 'invite/<id>' => 'site/invite',
                 'webhook/telegram/<token>' => 'webhook/telegram',
                 'webhook/telegram-bot/<token>' => 'webhook/telegram-bot',
+                'webhook/telegram-group-bot/<token>' => 'webhook/telegram-group-bot',
                 'website-settings' => 'setting/index',
                 'support-groups/clients-languages/<id:[\d]+>' => 'support-groups/clients-languages',
                 'support-groups/clients-list/<id:[\d]+>/<language:[\w]+>' => 'support-groups/clients-list',
