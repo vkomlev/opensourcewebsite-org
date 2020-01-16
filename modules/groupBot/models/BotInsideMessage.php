@@ -1,9 +1,9 @@
 <?php
 
-namespace app\modules\bot\models;
+namespace app\modules\groupBot\models;
 
-use app\modules\bot\Module;
-use app\modules\bot\telegram\BotApiClient;
+use app\modules\groupBot\Module;
+use app\modules\groupBot\telegram\BotApiClient;
 use TelegramBot\Api\Types\Message;
 use yii\behaviors\TimestampBehavior;
 

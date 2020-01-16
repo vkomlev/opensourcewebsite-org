@@ -1,8 +1,8 @@
 <?php
 
-namespace app\modules\bot\models;
+namespace app\modules\groupBot\models;
 
-use app\modules\bot\Module;
+use app\modules\groupBot\Module;
 
 /**
  * This is the model class for table "support_group_bot_client".

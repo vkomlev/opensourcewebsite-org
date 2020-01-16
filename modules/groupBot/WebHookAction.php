@@ -1,10 +1,10 @@
 <?php
 
-namespace app\modules\bot;
+namespace app\modules\groupBot;
 
 use yii\base\Action;
-use app\modules\bot\telegram\BotApiClient;
-use app\modules\bot\models\Bot;
+use app\modules\groupBot\telegram\BotApiClient;
+use app\modules\groupBot\models\Bot;
 use Yii;
 
 /**
@@ -58,7 +58,7 @@ class WebHookAction extends Action
         }
 
         /** @var Module $botModule */
-        $botModule = Yii::$app->getModule('bot');
+        $botModule = Yii::$app->getModule('groupBot');
         $botModule->initBotComponents($botApi);
 
         return $botModule->dispatchRoute();

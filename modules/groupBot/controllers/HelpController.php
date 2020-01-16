@@ -1,8 +1,8 @@
 <?php
 
-namespace app\modules\bot\controllers;
+namespace app\modules\groupBot\controllers;
 
-use app\modules\bot\CommandController;
+use app\modules\groupBot\CommandController;
 
 /**
  * Class HelpController

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\modules\bot\models;
+namespace app\modules\groupBot\models;
 
-use app\modules\bot\telegram\BotApiClient;
+use app\modules\groupBot\telegram\BotApiClient;
 use phpDocumentor\Reflection\Types\Self_;
 use yii\behaviors\TimestampBehavior;
 

@@ -10,6 +10,7 @@ use Yii;
  * @property int $id
  * @property string $name
  * @property string $token
+ * @property string $type
  * @property integer $status
  *
  * @property BotClient[] $botClients
@@ -20,6 +21,7 @@ class Bot extends \yii\db\ActiveRecord
 {
     const BOT_STATUS_DISABLED = 0;
     const BOT_STATUS_ENABLED = 1;
+    const BOT_TYPE = 'private';
 
     /**
      * {@inheritdoc}
@@ -32,12 +34,22 @@ class Bot extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public function init()
+    {
+        $this->type = Bot::BOT_TYPE;
+
+        return parent::init();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function rules()
     {
         return [
             [['name', 'token'], 'required'],
             [['token'], 'validateToken'],
-            [['name', 'token'], 'string', 'max' => 255],
+            [['name', 'token', 'type'], 'string', 'max' => 255],
             [['status'], 'integer', 'min' => 0, 'max' => 1],
         ];
     }
@@ -121,6 +133,7 @@ class Bot extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'token' => 'Token',
+            'type' => 'Type',
             'status' => 'Status',
         ];
     }

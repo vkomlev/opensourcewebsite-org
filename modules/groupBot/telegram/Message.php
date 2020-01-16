@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\bot\telegram;
+namespace app\modules\groupBot\telegram;
 
 use TelegramBot\Api\Types\Message as TelegramMessageType;
 

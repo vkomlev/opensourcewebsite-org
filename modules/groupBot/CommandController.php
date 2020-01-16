@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\bot;
+namespace app\modules\groupBot;
 
 use yii\base\Controller;
 use yii\base\InlineAction;
@@ -34,7 +34,7 @@ class CommandController extends Controller {
     public function runAction($id, $params = [], $protect = false)
     {
         if (!$protect) {
-            throw new InvalidCallException("Command controller can run only by bot module");
+            throw new InvalidCallException("Command controller can run only by groupBot module");
         }
 
         return parent::runAction($id, $params);

@@ -1,11 +1,11 @@
 <?php
 
-namespace app\modules\bot\telegram;
+namespace app\modules\groupBot\telegram;
 
 use TelegramBot\Api\BotApi;
 use Yii;
-use app\modules\bot\models\BotClient;
-use app\modules\bot\models\BotOutsideMessage;
+use app\modules\groupBot\models\BotClient;
+use app\modules\groupBot\models\BotOutsideMessage;
 
 /**
  * Class BotHandler

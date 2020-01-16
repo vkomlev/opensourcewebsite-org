@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\bot\helpers;
+namespace app\modules\groupBot\helpers;
 
 use TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
 use yii\base\InvalidParamException;
